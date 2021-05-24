@@ -1,0 +1,11 @@
+.heading{
+  font-size: 43px;
+  text-align: center;
+  text-decoration: solid;
+  margin-bottom: 0rem;
+}
+.rotate{
+  display: inline-block;
+  transform: rotate(-90deg);
+  font-size: 25px;
+}
