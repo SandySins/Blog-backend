@@ -1,42 +1,31 @@
 import React from 'react';
 import '../App.css';
+import { NavLink } from 'react-router-dom'
 const navbar = ()=>{
 return (
   <>
   <div>
-    <nav className="navbar navbar-expand-lg navbar-light shadow-sm  mb-2 bg-white rounded p-0 border-bottom">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expanding navbar-light Shadow-Box  margin-bottom white Bor-radius padding0 border-bottom">
+      <div className="cont-fluid">
         <div className="collapse navbar-collapse" id="navbarText">
           <ul className="navbar-nav App-nav-item justify-content-evenly">
             <li className="nav-item">
-              <p className="nav-link active">
-                Home
-                </p>
+                <NavLink className="nav-link active" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-            <p className="nav-link active">
-            Bollywood
-              </p>
+            <NavLink className="nav-link active" to="/Bollywood">Bollywood</NavLink>
             </li>
             <li className="nav-item">
-              <p className="nav-link active">
-                Technology
-              </p>
+              <NavLink className="nav-link active" to="/Bollywood">Technology</NavLink>
             </li>
             <li className="nav-item">
-              <p className="nav-link active">
-                Hollywood
-              </p>
+            <NavLink className="nav-link active" to="/Bollywood">Hollywood</NavLink>
             </li>
             <li className="nav-item">
-              <p className="nav-link active">
-                Fitness
-              </p>
+            <NavLink className="nav-link active" to="/Bollywood">Fitness</NavLink>
             </li>
             <li className="nav-item">
-              <p className="nav-link active">
-                Food
-              </p>
+            <NavLink className="nav-link active" to="/Bollywood">Food</NavLink>
             </li>
           </ul>
         </div>

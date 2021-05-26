@@ -5,7 +5,7 @@ const topPosts = (props) => {
     <div className="mb-5">
       <div className="row">
         <div className="col-8">
-        <div className="card bg-dark text-white">
+        <div className="card dark text-white">
             <img
               src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"
               className="card-img"
@@ -20,7 +20,7 @@ const topPosts = (props) => {
           </div>
         </div>
         <div className="col-4">
-        <div className="p-2 bd-highlight">
+        <div className="p-2 ">
       <div className="card mb-3 c-width border-0">
         <div className="row g-0">
           <div className="col-md-5">
@@ -42,7 +42,7 @@ const topPosts = (props) => {
         </div>
       </div>
       
-    </div><div className="p-2 bd-highlight border-top ">
+    </div><div className="p-2  border-top ">
       <div className="card mb-3 c-width border-0">
         <div className="row g-0">
           <div className="col-md-5">
@@ -64,7 +64,7 @@ const topPosts = (props) => {
           </div>
         </div>
       </div>
-    </div><div className="p-2 bd-highlight border-top ">
+    </div><div className="p-2  border-top ">
       <div className="card mb-3 c-width border-0">
         <div className="row g-0">
           <div className="col-md-5">

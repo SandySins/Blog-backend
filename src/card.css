@@ -46,8 +46,12 @@ border-radius: calc(.25rem - 1px);
 .text-white {
   color: #fff !important;
 }
+.limit:nth-child(2n+1) {
+  display: none;
+}
 .card-title {
   margin-bottom: .5rem;
+  font-size: 33px;
 }
 .card {
   position: relative;
@@ -61,8 +65,8 @@ border-radius: calc(.25rem - 1px);
   border-radius: .25rem;
 }
 .card-group {
-  display: flex;
-  flex-flow: row wrap;
+ 
+  margin: 20px;
 }
 .card-group > .card {
   flex: 1 0;

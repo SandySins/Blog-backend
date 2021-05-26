@@ -1,8 +1,9 @@
 import React from "react";
-import "../card.css";
+import "../../card.css";
+
 const card2 = (props) => {
   return (
-    <div className="p-2 bd-highlight border-top ">
+    <div className="p-2  border-top ">
       <div className="card mb-3 c-width border-0">
         <div className="row g-0">
           <div className="col-md-5">
