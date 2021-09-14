@@ -1,94 +1,61 @@
 import React from "react";
 import "../card.css";
 const topPosts = (props) => {
-  return (
-    <div className="mb-5">
-      <div className="row">
-        <div className="col-8">
-        <div className="card dark text-white">
+  let item = [];
+  let item2 = [];
+  for (let i = 0; i < props.Data.length; i++) {
+    if (props.Data[i].text === "Midnights Adventure") {
+      item.push(
+        <div key={i} className="col-8">
+          <div className="card dark text-white">
             <img
-              src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"
-              className="card-img"
+              src={props.Data[i].imgUrl}
+              className="card-img height"
               alt="Nothing"
             ></img>
             <div className="card-over">
-              <h5 className="card-title"> Card title </h5>
-              <p className="card-text"> Last updated 3 mins ago </p>
+              <h3 className="card-title">{props.Data[i].title}</h3>
+              <p className="card-text"> {props.Data[i].lastUpdated}</p>
               <div className="rank">1</div>
             </div>
-            
           </div>
         </div>
-        <div className="col-4">
-        <div className="p-2 ">
-      <div className="card mb-3 c-width border-0">
-        <div className="row g-0">
-          <div className="col-md-5">
-            <img
-              src="https://expertphotography.com/wp-content/uploads/2018/07/nature-photography.jpg"
-              className="image"
-              alt="..."
-            ></img>
-          </div>
-          <div className="col-md-7">
-            <div className="card-body">
-              <h5 className="card-title"> Card title </h5>
-              <p className="card-text">
-                <small className="text-muted"> Last updated 3 mins ago </small>
-              </p>
-              <div className="rank text-muted">2</div>
+      );
+    } else if (props.Data[i].title === "Catch Waves with Adventurer Guide") {
+      item2.push(
+        <div key={i} className="p-2 ">
+          <div className="card mb-3 c-width border-0">
+            <div className="row g-0">
+              <div className="col-md-5">
+                <img
+                  src={props.Data[i].imgUrl}
+                  className="image"
+                  alt="..."
+                ></img>
+              </div>
+              <div className="col-md-7">
+                <div className="card-body">
+                  <h5 className="card-title">{props.Data[i].title}</h5>
+                  <p className="card-text">
+                    <small className="text-muted">
+                      {props.Data[i].lastUpdated}
+                    </small>
+                  </p>
+                  <div className="rank text-muted">2</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      
-    </div><div className="p-2  border-top ">
-      <div className="card mb-3 c-width border-0">
-        <div className="row g-0">
-          <div className="col-md-5">
-            <img
-              src="https://expertphotography.com/wp-content/uploads/2018/07/nature-photography.jpg"
-              className="image"
-              alt="..."
-            ></img>
-          </div>
-          <div className="col-md-7">
-            <div className="card-body">
-              <h5 className="card-title"> Card title </h5>
-              <p className="card-text">
-                <small className="text-muted"> Last updated 3 mins ago </small>
-              </p>
-              <div className="rank text-muted">3</div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div><div className="p-2  border-top ">
-      <div className="card mb-3 c-width border-0">
-        <div className="row g-0">
-          <div className="col-md-5">
-            <img
-              src="https://expertphotography.com/wp-content/uploads/2018/07/nature-photography.jpg"
-              className="image"
-              alt="..."
-            ></img>
-          </div>
-          <div className="col-md-7">
-            <div className="card-body">
-              <h5 className="card-title"> Card title </h5>
-              <p className="card-text">
-                <small className="text-muted"> Last updated 3 mins ago </small>
-              </p>
-              <div className="rank text-muted">4</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div>
-          
-         </div>
+      );
+    }
+  }
+
+  return (
+    <div className="mb-5">
+      <div className="row">
+        {item}
+        <div className="col-4">{item2}</div>
       </div>
     </div>
   );

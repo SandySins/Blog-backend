@@ -1,28 +1,29 @@
 import React from "react";
 import "../../card.css";
 
-const card2 = (props) => {
-  return (
-    <div className="p-2  border-top ">
+const Card2 = (props) => {
+  let item=[];
+  
+  for (let i=0; i<props.Data.length; i++) {
+    if(props.Data[i].title === "Joshua Tree"){
+      item.push(<div key={i} className="p-2  border-top ">
       <div className="card mb-3 c-width border-0">
         <div className="row g-0">
           <div className="col-md-5">
             <img
-              src="https://expertphotography.com/wp-content/uploads/2018/07/nature-photography.jpg"
+              src={props.Data[i].imgUrl}
               className="image"
               alt="..."
             ></img>
           </div>
           <div className="col-md-7">
             <div className="card-body">
-              <h5 className="card-title"> Card title </h5>
+              <h5 className="card-title">{props.Data[i].title}</h5>
               <p className="card-text text-muted">
-                This is a wider card with supporting text below as a natural
-                lead - in to additional content.This content is a little bit
-                longer.
+              {props.Data[i].text}
               </p>
               <p className="card-text">
-                <small className="text-muted"> Last updated 3 mins ago </small>
+                <small className="text-muted">{props.Data[i].lastUpdated} </small>
               </p>
             </div>
           </div>
@@ -30,6 +31,15 @@ const card2 = (props) => {
       </div>
       
     </div>
-  );
+  )
+}
+    
+}
+
+  return (
+    <>
+    {item}
+    </>
+    );
 };
-export default card2;
+export default Card2;

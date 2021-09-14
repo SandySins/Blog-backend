@@ -7,7 +7,7 @@ const header = () => {
     <nav className="navbar navbar-expanding navbar-light Shadow-Box  margin-bottom white Bor-radius padding0 border-bottom">
       <div className="cont-fluid width">
         <div className="collapse navbar-collapse" id="navbarText">
-          <ul className="navbar-nav App-nav-item justify-content-between">
+          <ul className="navbar-nav nav2 App-nav-item justify-content-between">
             <li className="nav-item pd-2">
                <Heading />
             </li>

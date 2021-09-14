@@ -13,8 +13,8 @@ function App() {
     <Route path="/" component={Home} exact />
     <Route path="/Bollywood" component={Bollywood} exact />
  
-    </div>
     <Route path="/CardDetails" component={CardDetails} exact />
+    </div>
     </BrowserRouter>
   );
 }

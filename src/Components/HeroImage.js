@@ -3,16 +3,19 @@ import "../card.css";
 
 var card= [
   {
-    title: "Hello1",
-    text:"This is my world"
+    title: "Title of Vertical Gallery",
+    text:"Overnight Adventure",
+    imgUrl: "https://www.makemytrip.com/travel-guide/media/dg_image/imphal/Imphal-Valley-Imphal.jpg"
   },
   {
-    title: "Hello2",
-    text:"This is my world"
+    title: "Sound Cloud Your Love is Doomed",
+    text:"Overnight Adventure",
+    imgUrl: "https://img.traveltriangle.com/blog/wp-content/uploads/2020/02/Valleys-In-Himachal-Pradesh-OG.jpg"
   },
   {
-    title: "Hello3",
-    text:"This is my world"
+    title: "Sound Cloud Your Love is Doomed",
+    text:"Overnight Adventure",
+    imgUrl: "https://static.india.com/wp-content/uploads/2018/08/Sangla-Valley.jpg?impolicy=Medium_Resize&w=1200&h=800"
   }
 ]
 const heroImage = () => {
@@ -20,10 +23,10 @@ const heroImage = () => {
     <div className="mb-5">
       <div className="row">
         <div className="col-8 margin-bottom">
-          <div className="card dark text-white">
+          <div className="card dark height text-white">
             <img
-              src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"
-              className="card-img"
+              src={card[0].imgUrl}
+              className="card-img height"
               alt="Nothing"
             ></img>
             <div className="card-over">
@@ -35,7 +38,7 @@ const heroImage = () => {
         <div className="col-4">
           <div className="card dark text-white">
             <img
-              src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"
+              src={card[1].imgUrl}
               className="card-img"
               alt="Nothing"
             ></img>
@@ -46,7 +49,7 @@ const heroImage = () => {
           </div>
           <div className="card dark text-white mt-2">
             <img
-              src="https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823__340.jpg"
+              src={card[2].imgUrl}
               className="card-img"
               alt="Nothing"
             ></img>
